@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+/* ตัวฟอนต์ภาษาไทย ค้นหาเพิ่มเติมมาจากในเน็ต */
+
+* {
+   font-family: 'Kanit', sans-serif;
+}
+
+body {
+   background-color: rgb(204, 224, 255);
+}
+
+h1 {
+   color: rgb(0, 51, 204);
+   text-align: center;
+}
+
+h2 {
+   color: rgb(0, 51, 204);
+}
+
+b {
+   color: rgb(0, 0, 204);
+}
+
+hr {
+   height: 2.25px;
+   background-color: rgb(0, 51, 204);
+   border: none;
+}
+
+div {
+   text-align: center;
+}
+
+img {
+   margin: 6px;
+}
+
+marquee {
+   background-color: rgb(0, 51, 204);
+   color: #ffffff;
+   padding: 20px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- เพิ่ม Viewport สำหรับรองรับ Responsive Design ตาม Module 06 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natthawat's Learning Portfolio - A2</title>
+    <!-- เพิ่ม Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ไฟล์ CSS ส่วนตัวของเรา -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="container py-5" style="max-width: 800px;">
+
+        <!-- หัวข้อหลัก -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">My First Learning Portfolio</h1>
+        </div>
+
+        <!-- ส่วนรูปโปรไฟล์ -->
+        <div class="text-center mb-4">
+            <img src="./media/DSC03604.jpg" alt="นายไอซ์หีบเหล็ก" class="img-fluid rounded-circle shadow"
+                style="max-width: 250px; height: 250px; object-fit: cover;">
+            <!--ชื่อไอซ์หีบเหล็ก ใช้เป็นนามสมมุติเพื่อความบันเทิงเท่านั้น ไม่มีเจตนาอื่นแอบแฝง-->
+        </div>
+
+        <!-- ส่วน About Me ในรูปแบบ Card -->
+        <section class="card shadow-sm border-0 mb-4 p-4 rounded-4">
+            <h2 class="h4 text-primary mb-3">ABOUT ME</h2>
+            <p class="mb-0">
+                <b>สวัสดีครับ</b> ผมนายณัฐวัฒน์ เกียรติขจรสกุล <b>(ไอซ์)</b> รหัสนักศึกษา <b>6909546043</b><br>
+                คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 1<br>
+                <b><i>เป็นนักศึกษา นักล่าปริญญาธรรมดาคนนึง</i></b>
+            </p>
+        </section>
+
+        <!-- ส่วน What I Built -->
+        <section class="card shadow-sm border-0 mb-4 p-4 rounded-4">
+            <h2 class="h4 text-primary mb-3">What I Built</h2>
+            <p>
+                งานนี้เป็นเว็บไซต์ <b><i>Learning Portfolio</i></b> แบบหน้าเดียว ที่แสดงเกียรติบัตรต่างๆ ของผมในช่วง
+                ม.ปลายครับ<br>
+                โดยมีส่วนประกอบสำคัญคือ ตัวเกียรติบัตรพร้อมคำอธิบายแบบสั้นๆ ใต้รูป
+            </p>
+            <p class="mb-0 text-muted small">
+                ในการเปิดเว็บไซต์จากเครื่องของตัวเองโดยตรง จะถือว่ามีเพียง <b><i>Client (เว็บบราว์เซอร์)</i></b>
+                ที่ทำหน้าที่อ่านและประมวลผลไฟล์ แต่จะไม่มี <b><i>Server</i></b> เกิดขึ้น
+                เพราะเบราว์เซอร์ดึงข้อมูลจากฮาร์ดดิสก์โดยตรงไม่ได้ผ่านเครือข่ายอินเทอร์เน็ตครับ
+            </p>
+        </section>
+
+        <!-- ส่วน How I Built It -->
+        <section class="card shadow-sm border-0 mb-4 p-4 rounded-4">
+            <h2 class="h4 text-primary mb-3">How I Built It</h2>
+            <p>
+                ผมเริ่มต้นจากการวางโครงกับเลย์เอาต์ภาพรวมของหน้าเว็บก่อน ว่าจะให้ตัวรูปภาพ ตัวข้อความอยู่ตรงไหนบ้าง
+                <br>จากนั้นผมค่อยเริ่มเขียนตัวโครงสร้างด้วย <b><i>HTML</i></b> แบบพยายามใช้แท็กให้ถูกต้อง
+                <br>ต่อด้วยเขียนไฟล์ <b><i>CSS</i></b> แยกต่างหากเพื่อใส่สีสัน กำหนดระยะห่างให้ตัวเว็บดูน่าอ่านขึ้น
+            </p>
+            <p class="text-muted mb-0">
+                เครื่องมือที่ใช้คือ <b><i>VS Code</i></b> ครับ และก็ศึกษาแท็กเพิ่มเติมจาก<b>สไลด์อาจารย์</b>,
+                <b>W3Schools</b> หรือใช้ <b>AI</b> มาช่วยอธิบายการทำงานของโค้ดบางตัวเพื่อให้ได้ความเข้าใจที่ลึกซึ้งขึ้น
+            </p>
+        </section>
+
+        <!-- ส่วน Reflection -->
+        <section class="card shadow-sm border-0 mb-4 p-4 rounded-4">
+            <h2 class="h4 text-primary mb-3">Reflection</h2>
+            <ol class="mb-0 ps-3">
+                <li class="mb-2">
+                    <b>ปัญหาและความท้าทายที่เจอ:</b> ช่วงแรกงงเรื่องใส่ <b>Path</b> รูปกับวิดีโอครับ
+                    บางทีเปิดแล้วรูปไม่ขึ้นเพราะพิมพ์ที่อยู่โฟลเดอร์ผิด เลยแก้ด้วยการจัดไฟล์แยกเข้าโฟลเดอร์
+                    <b>media/</b> กับ <b>css/</b> ให้เป็นระเบียบ แล้วค่อยๆ เช็ก <b>Relative Path</b>
+                    ทีละจุดจนใช้ได้ปกติครับ
+                </li>
+                <li class="mb-2">
+                    <b>สิ่งที่เข้าใจมากขึ้น:</b> เข้าใจการทำงานของ <b>HTML</b> กับ <b>CSS</b> ชัดขึ้นครับ รู้ว่า
+                    <b>HTML</b> คือการขึ้นโครงสร้าง ส่วน <b>CSS</b> คือการเอามาตกแต่ง ใส่สี
+                    จัดระยะห่างให้เว็บน่าอ่านมากขึ้น
+                </li>
+                <li>
+                    <b>สิ่งที่อยากปรับปรุงต่อ:</b>
+                    อยากลองนำพวกงานอินโฟกราฟิกหรือวิดีโอที่ตัดต่อเองมาจัดวางในเว็บให้ดูลงตัวกว่านี้ แล้วก็อยากลองจัด
+                    <b>Layout</b> หน้าเว็บให้ดูน่าสนใจขึ้นครับ
+                </li>
+            </ol>
+        </section>
+
+        <!-- ส่วน Reflection -->
+        <section class="card shadow-sm border-0 mb-4 p-4 rounded-4">
+            <h2 class="h4 text-primary mb-3">Reflection</h2>
+            <ol class="mb-0 ps-3">
+                <li class="mb-2">
+                    <b>ปัญหาและความท้าทายที่เจอ:</b> ช่วงแรกงงเรื่องใส่ <b>Path</b> รูปกับวิดีโอครับ
+                    บางทีเปิดแล้วรูปไม่ขึ้นเพราะพิมพ์ที่อยู่โฟลเดอร์ผิด เลยแก้ด้วยการจัดไฟล์แยกเข้าโฟลเดอร์
+                    <b>media/</b> กับ <b>css/</b> ให้เป็นระเบียบ แล้วค่อยๆ เช็ก <b>Relative Path</b>
+                    ทีละจุดจนใช้ได้ปกติครับ
+                </li>
+                <li class="mb-2">
+                    <b>สิ่งที่เข้าใจมากขึ้น:</b> เข้าใจการทำงานของ <b>HTML</b> กับ <b>CSS</b> ชัดขึ้นครับ รู้ว่า
+                    <b>HTML</b> คือการขึ้นโครงสร้าง ส่วน <b>CSS</b> คือการเอามาตกแต่ง ใส่สี
+                    จัดระยะห่างให้เว็บน่าอ่านมากขึ้น
+                </li>
+                <li>
+                    <b>สิ่งที่อยากปรับปรุงต่อ:</b>
+                    อยากลองนำพวกงานอินโฟกราฟิกหรือวิดีโอที่ตัดต่อเองมาจัดวางในเว็บให้ดูลงตัวกว่านี้ แล้วก็อยากลองจัด
+                    <b>Layout</b> หน้าเว็บให้ดูน่าสนใจขึ้นครับ
+                </li>
+            </ol>
+        </section>
+
+        <!-- ส่วน My Certificates (ใช้ระบบ Grid ของ Bootstrap จัดเรียงรูป) -->
+        <section class="card shadow-sm border-0 mb-4 p-4 rounded-4">
+            <h2 class="h4 text-primary mb-3">My Certificates</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="./media/Certificates1.jpg" alt="เกียรติบัตร 1" class="img-fluid rounded shadow-sm w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="./media/Certificates2.jpg" alt="เกียรติบัตร 2" class="img-fluid rounded shadow-sm w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="./media/Certificates3.jpg" alt="เกียรติบัตร 3" class="img-fluid rounded shadow-sm w-100">
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วน Contact / โซเชียล -->
+        <section class="card shadow-sm border-0 mb-4 p-4 rounded-4 text-center">
+            <h2 class="h4 text-primary mb-3">ช่องทางการติดต่อ</h2>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="mailto:natthawat.kia@dome.tu.ac.th" class="btn btn-outline-primary btn-sm">📧 Email</a>
+                <a href="https://www.instagram.com/mangzizo/" target="_blank" class="btn btn-outline-danger btn-sm">📸
+                    Instagram</a>
+                <a href="https://web.facebook.com/MANGZiZ0/?locale=th_TH" target="_blank"
+                    class="btn btn-outline-secondary btn-sm">📘 Facebook</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
