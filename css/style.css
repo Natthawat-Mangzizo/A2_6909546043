@@ -1,5 +1,5 @@
+/* ดึงฟอนต์ Kanit จาก Google Fonts มาใช้แต่งเว็บ */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
-/* ตัวฟอนต์ภาษาไทย ค้นหาเพิ่มเติมมาจากในเน็ต */
 
 * {
    font-family: 'Kanit', sans-serif;
@@ -28,10 +28,6 @@ hr {
    border: none;
 }
 
-div {
-   text-align: center;
-}
-
 img {
    margin: 6px;
 }
@@ -40,4 +36,13 @@ marquee {
    background-color: rgb(0, 51, 204);
    color: #ffffff;
    padding: 20px;
+}
+
+/* เพิ่มลูกเล่นเบาๆ ให้การ์ดขยับลอยขึ้นนิดนึงเวลาเอาเมาส์ไปชี้ */
+.card {
+   transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+   transform: translateY(-3px);
 }
